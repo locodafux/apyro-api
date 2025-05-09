@@ -1,0 +1,26 @@
+### Get all items
+GET http://localhost:3000/items
+
+### Get one item by ID
+GET http://localhost:3000/items/r1BOgqsIhJjCwuATWgHD
+
+### Create new item
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+  "name": "Sample Item",
+  "price": 100
+}
+
+### Update item
+PUT http://localhost:3000/items/r1BOgqsIhJjCwuATWgHD
+Content-Type: application/json
+
+{
+  "name": "Updated Item",
+  "price": 150
+}
+
+### Delete item
+DELETE http://localhost:3000/items/r1BOgqsIhJjCwuATWgHD
